@@ -70,7 +70,7 @@ class MainActivity : ComponentActivity() {
 fun GroupList(state: MutableState<TextFieldValue>, list: MutableState<List<Int>>, context: Context) {
     val students = list.value
     if (students == null){
-        Toast.makeText(context, "ОШИБКА ОШИБКА", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "ОШИБКА", Toast.LENGTH_SHORT).show()
         return
     }
     var filteredGroups: List<Int>
