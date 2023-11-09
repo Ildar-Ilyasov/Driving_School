@@ -73,11 +73,11 @@ fun StudentsList(state: MutableState<TextFieldValue>, list: MutableState<List<St
             students.value
         } else {
             val resultList = ArrayList<StudentsEntity>()
-            for (country in students.value) {
-                if (country.name.lowercase(Locale.getDefault())
+            for (stud in students.value) {
+                if (stud.name.lowercase(Locale.getDefault())
                     .contains(searchedText.lowercase(Locale.getDefault()))
                     ) {
-                    resultList.add(country)
+                    resultList.add(stud)
                 }
             }
             resultList
